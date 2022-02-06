@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class CardBio extends StatelessWidget {
   final double marginBottom;
   final IconData leadingIcon;
-  final IconData trailingIcon;
+
+  //final IconData trailingIcon;
   final String title;
   final String subtitle;
   final void Function() onPressedFunction;
@@ -12,7 +13,7 @@ class CardBio extends StatelessWidget {
     required this.leadingIcon,
     required this.subtitle,
     required this.title,
-    required this.trailingIcon,
+    // required this.trailingIcon,
     required this.onPressedFunction,
     this.marginBottom = 0,
     Key? key,
@@ -30,13 +31,22 @@ class CardBio extends StatelessWidget {
         bottom: marginBottom,
       ),
       child: ListTile(
-        leading: Icon(leadingIcon),
-        title: Text(title),
-        subtitle: Text(subtitle),
-        trailing: IconButton(
+        leading: IconButton(
           onPressed: onPressedFunction,
-          icon: Icon(trailingIcon),
+          icon: Icon(
+            leadingIcon,
+            size: 30,
+          ),
         ),
+        title: Text(
+            title
+
+        ),
+        subtitle: Text(subtitle),
+        // trailing: IconButton(
+        // onPressed: (){},//onPressedFunction,
+        //   icon: Icon(trailingIcon),
+        // ),
       ),
     );
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'CardBio.dart';
 
 class Screen_Bio extends StatelessWidget {
@@ -19,23 +18,26 @@ class Screen_Bio extends StatelessWidget {
             fontFamily: 'Roboto',
             fontWeight: FontWeight.bold,
             fontSize: 30,
-            color: Colors.black,
+            color: Colors.yellow,
           ),
         ),
       ),
       body: Stack(
         children: [
           Image.network(
-            'https://media.istockphoto.com/vectors/sunbeams-bright-rays-background-vector-id1285308552?k=20&m=1285308552&s=170667a&w=0&h=miA83drtvWjs0rt5fA21v1yqrexe47r-j-aFO6_Ivnw=',
+            'image/Untitled-1.png',
             height: double.infinity,
             fit: BoxFit.fill,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-             const CircleAvatar(
+              const CircleAvatar(
                 backgroundImage: AssetImage('image/خالد.jpg'),
                 radius: 40,
+              ),
+              const SizedBox(
+                height: 20,
               ),
               const Text(
                 'Khaled Shbair',
@@ -43,17 +45,23 @@ class Screen_Bio extends StatelessWidget {
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w500,
                   fontSize: 20,
-                  color: Colors.blue,
+                  color: Colors.white,
                 ),
+              ),
+              const SizedBox(
+                height: 12,
               ),
               const Text(
                 'Flutter Coruse - Vision Plus',
                 style: TextStyle(
-                  color: Colors.blue,
+                  color: Colors.white,
                   fontFamily: 'Roboto',
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w300,
                   fontSize: 20,
                 ),
+              ),
+              const SizedBox(
+                height: 20,
               ),
               const Divider(
                 color: Colors.black,
@@ -63,42 +71,38 @@ class Screen_Bio extends StatelessWidget {
               ),
               CardBio(
                 leadingIcon: Icons.account_circle,
-                title: 'Name',
-                subtitle: 'Khaled Shbair',
-                trailingIcon:Icons.accessibility_sharp,
-                marginBottom: 5,
-                onPressedFunction: (){
-                  print('Name');
+                onPressedFunction: () {
+                  print('Full name: Khaled Shbair');
                 },
+                title: 'Full name',
+                subtitle: 'Khaled Shbair',
+                marginBottom:10,
               ),
               CardBio(
-                leadingIcon: Icons.account_circle,
-                title: 'Name',
-                subtitle: 'Khaled Shbair',
-                trailingIcon:Icons.accessibility_sharp,
-                marginBottom: 5,
-                onPressedFunction: (){
-                  print('Name');
+                leadingIcon: Icons.collections_bookmark_outlined,
+                onPressedFunction: () {
+                  print('Course Name: Flutter');
                 },
+                title: 'Course Name',
+                subtitle: 'Flutter',
+                marginBottom: 10,
               ),
               CardBio(
-                leadingIcon: Icons.account_circle,
-                title: 'Name',
-                subtitle: 'Khaled Shbair',
-                trailingIcon:Icons.accessibility_sharp,
-                marginBottom: 5,
-                onPressedFunction: (){
-                  print('Name');
+                leadingIcon: Icons.email,
+                onPressedFunction: () {
+                  print('Email : khaled.shbair12@gmail.com');
                 },
+                title: 'Email',
+                subtitle: 'khaled.shbair12@gmail.com',
+                marginBottom:10,
               ),
               CardBio(
-                leadingIcon: Icons.account_circle,
-                title: 'Name',
-                subtitle: 'Khaled Shbair',
-                trailingIcon:Icons.accessibility_sharp,
-                onPressedFunction: (){
-                  print('Name');
+                leadingIcon: Icons.phone,
+                onPressedFunction: () {
+                  print('Full name: +970599724037');
                 },
+                title: 'Mobile',
+                subtitle: '+970599724037',
               ),
             ],
           ),
