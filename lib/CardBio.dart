@@ -23,7 +23,7 @@ class CardBio extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(50),
       ),
       margin: EdgeInsetsDirectional.only(
         start: 40,
@@ -39,14 +39,19 @@ class CardBio extends StatelessWidget {
           ),
         ),
         title: Text(
-            title
-
+          title,
+          style: const TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+          ),
         ),
-        subtitle: Text(subtitle),
-        // trailing: IconButton(
-        // onPressed: (){},//onPressedFunction,
-        //   icon: Icon(trailingIcon),
-        // ),
+        subtitle: Text(
+          subtitle,
+          style: const TextStyle(
+              fontSize: 15,
+              fontWeight: FontWeight.w500,
+          ),
+        ),
       ),
     );
   }

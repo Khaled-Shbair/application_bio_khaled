@@ -24,7 +24,7 @@ class Screen_Bio extends StatelessWidget {
       ),
       body: Stack(
         children: [
-          Image.network(
+          Image.asset(
             'image/Untitled-1.png',
             height: double.infinity,
             fit: BoxFit.fill,
@@ -33,7 +33,7 @@ class Screen_Bio extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const CircleAvatar(
-                backgroundImage: AssetImage('image/خالد.jpg'),
+                backgroundImage: AssetImage('image/khaled.jpg'),
                 radius: 40,
               ),
               const SizedBox(
@@ -57,15 +57,14 @@ class Screen_Bio extends StatelessWidget {
                   color: Colors.white,
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w300,
-                  fontSize: 20,
+                  fontSize: 16,
                 ),
               ),
               const SizedBox(
                 height: 20,
               ),
               const Divider(
-                color: Colors.black,
-                thickness: 1,
+                color: Colors.transparent,
                 indent: 40,
                 endIndent: 40,
               ),
@@ -103,6 +102,9 @@ class Screen_Bio extends StatelessWidget {
                 },
                 title: 'Mobile',
                 subtitle: '+970599724037',
+              ),
+              const Text(
+                  'Flutter_2022',
               ),
             ],
           ),
