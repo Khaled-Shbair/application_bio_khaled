@@ -28,36 +28,11 @@ class MyApp extends StatelessWidget {
               'https://media.istockphoto.com/vectors/sunbeams-bright-rays-background-vector-id1285308552?k=20&m=1285308552&s=170667a&w=0&h=miA83drtvWjs0rt5fA21v1yqrexe47r-j-aFO6_Ivnw=',
               height: double.infinity,
               fit: BoxFit.cover,
-            ),
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Spacer(),
-              const CircleAvatar(
-                radius: 40,
-                backgroundImage: AssetImage('image/FB_IMG_1614252710095.jpg'),
-              ),
-              const Text(
-                'Khaled Shbair',
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontFamily: 'IBM Plex Sans Thai Looped',
-                  fontWeight: FontWeight.w600,
-                  fontSize: 20,
-                ),
-              ),
+
+
+
               const SizedBox(
                 height: 10,
-              ),
-              const Text(
-                'Flutter Coruse - Vision Plus',
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontFamily: 'IBM Plex Sans Thai Looped',
-                  fontWeight: FontWeight.w600,
-                  fontSize: 15,
-                ),
               ),
               const Divider(
                 thickness: 2,
