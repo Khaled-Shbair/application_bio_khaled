@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Screen_Bio.dart';
 
 void main()=>runApp(const MyApp());
 
@@ -7,8 +8,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: ,
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Screen_Bio(),
     );
   }
 }
@@ -18,30 +20,7 @@ class MyApp extends StatelessWidget {
 
 
 /**
-import 'dart:ui';
-import 'package:bio_application/widget/cardBio.dart';
-import 'package:flutter/material.dart';
 
-class BioScreeen extends StatelessWidget {
-  const BioScreeen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-        title: const Text(
-          'BIO',
-          style: TextStyle(
-            fontFamily: 'IBM Plex Sans Thai Looped',
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
-      body: Stack(
         children: [
           ImageFiltered(
             imageFilter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
