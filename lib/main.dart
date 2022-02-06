@@ -100,55 +100,9 @@ class MyApp extends StatelessWidget {
           //     textAlign: TextAlign.center,
           //   ),
           // ),
-        ],
-      ),
-    );
-  }
-}
 
-    import 'package:flutter/material.dart';
 
-    class CardBio extends StatelessWidget {
-    final IconData leadingIcon;
-    final String title;
-    final String subtitlel;
-    final IconData trailingIcon;
-    final double marginBottom;
-    final void Function () onPressed;
 
-    const CardBio({
-    required this.leadingIcon,
-    required this.title,
-    required this.subtitlel,
-    required this.trailingIcon,
-    required this.onPressed,
-    this.marginBottom = 0,
-    Key? key,
-    }) : super(key: key);
 
-    @override
-    Widget build(BuildContext context) {
-    return Card(
-    shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(10),
-    ),
-    margin: EdgeInsetsDirectional.only(
-    start: 40,
-    end: 40,
-    bottom: marginBottom,
 
-    ),
-    child: ListTile(
-    leading: Icon(leadingIcon),
-    title: Text(title),
-    subtitle: Text(subtitlel),
-    trailing: IconButton(
-    onPressed: onPressed,
-    icon: Icon(trailingIcon)
-    ),
-
-    ),
-    );
-    }
-    }
  **/

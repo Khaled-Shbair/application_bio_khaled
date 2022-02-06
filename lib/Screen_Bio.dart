@@ -32,12 +32,12 @@ class Screen_Bio extends StatelessWidget {
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              CircleAvatar(
+            children: [
+             const CircleAvatar(
                 backgroundImage: AssetImage('image/خالد.jpg'),
                 radius: 40,
               ),
-              Text(
+              const Text(
                 'Khaled Shbair',
                 style: TextStyle(
                   fontFamily: 'Roboto',
@@ -46,7 +46,7 @@ class Screen_Bio extends StatelessWidget {
                   color: Colors.blue,
                 ),
               ),
-              Text(
+              const Text(
                 'Flutter Coruse - Vision Plus',
                 style: TextStyle(
                   color: Colors.blue,
@@ -55,13 +55,51 @@ class Screen_Bio extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              Divider(
+              const Divider(
                 color: Colors.black,
                 thickness: 1,
                 indent: 40,
                 endIndent: 40,
               ),
-              CardBio(),
+              CardBio(
+                leadingIcon: Icons.account_circle,
+                title: 'Name',
+                subtitle: 'Khaled Shbair',
+                trailingIcon:Icons.accessibility_sharp,
+                marginBottom: 5,
+                onPressedFunction: (){
+                  print('Name');
+                },
+              ),
+              CardBio(
+                leadingIcon: Icons.account_circle,
+                title: 'Name',
+                subtitle: 'Khaled Shbair',
+                trailingIcon:Icons.accessibility_sharp,
+                marginBottom: 5,
+                onPressedFunction: (){
+                  print('Name');
+                },
+              ),
+              CardBio(
+                leadingIcon: Icons.account_circle,
+                title: 'Name',
+                subtitle: 'Khaled Shbair',
+                trailingIcon:Icons.accessibility_sharp,
+                marginBottom: 5,
+                onPressedFunction: (){
+                  print('Name');
+                },
+              ),
+              CardBio(
+                leadingIcon: Icons.account_circle,
+                title: 'Name',
+                subtitle: 'Khaled Shbair',
+                trailingIcon:Icons.accessibility_sharp,
+                onPressedFunction: (){
+                  print('Name');
+                },
+              ),
             ],
           ),
         ],
@@ -69,4 +107,3 @@ class Screen_Bio extends StatelessWidget {
     );
   }
 }
-
