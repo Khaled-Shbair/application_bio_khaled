@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'CardBio.dart';
 
@@ -75,7 +76,7 @@ class Screen_Bio extends StatelessWidget {
                 },
                 title: 'Full name',
                 subtitle: 'Khaled Shbair',
-                marginBottom:10,
+                marginBottom: 10,
               ),
               CardBio(
                 leadingIcon: Icons.collections_bookmark_outlined,
@@ -93,7 +94,7 @@ class Screen_Bio extends StatelessWidget {
                 },
                 title: 'Email',
                 subtitle: 'khaled.shbair12@gmail.com',
-                marginBottom:10,
+                marginBottom: 10,
               ),
               CardBio(
                 leadingIcon: Icons.phone,
@@ -103,10 +104,21 @@ class Screen_Bio extends StatelessWidget {
                 title: 'Mobile',
                 subtitle: '+970599724037',
               ),
-              const Text(
-                  'Flutter_2022',
-              ),
             ],
+          ),
+          const PositionedDirectional(
+            start: 20,
+            end: 20,
+            bottom: 20,
+            child: Text(
+              'Flutter - 2022',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.yellow,
+                fontSize: 15,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
           ),
         ],
       ),
